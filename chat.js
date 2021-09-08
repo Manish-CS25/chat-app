@@ -17,7 +17,7 @@ mongoose
   });
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
@@ -27,8 +27,7 @@ app.get("/", (req, res) => {
 
 app.post("/login", async (req, res) => {
   try {
-    // var data = json.parse(req.body);
-    console.log(req.body.email);
+    console.log(req.body);
     var students = new info({
       email: req.body.email,
       password: req.body.password,
