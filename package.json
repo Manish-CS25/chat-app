@@ -1,0 +1,22 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "chat.js",
+  "scripts": {
+    "dev": "nodemon chat"
+  },
+  "repository": {
+    "type": "git",
+    "url": "chat app"
+  },
+  "author": "manish chanda",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.4",
+    "nodemon": "^2.0.12",
+    "socket.io": "^4.2.0"
+  }
+}
